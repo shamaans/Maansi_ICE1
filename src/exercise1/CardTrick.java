@@ -8,7 +8,7 @@ package exercise1;
  * @author dancye
  * @author Paul Bonenfant Jan 25, 2022 
  * hii this maansi
- *that is funny fetch and merge
+ *that is funny fetch and merge and a branch
  */
 public class CardTrick {
     
