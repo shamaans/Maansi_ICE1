@@ -5,10 +5,8 @@ package exercise1;
  * It then searches the array of cards for the match to the user's card. 
  * To be used as starting code in Exercise
  *
- * @author dancye
+ * @author Maansi Sharma
  * @author Paul Bonenfant Jan 25, 2022 
- * hii this maansi
- *that is funny fetch and merge and a branch
  */
 public class CardTrick {
     
