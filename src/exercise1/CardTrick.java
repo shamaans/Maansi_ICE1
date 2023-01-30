@@ -18,12 +18,37 @@ public class CardTrick {
 
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
+            int randomSuit =random.nextInt(4);
+            String suit = suits[randomSuit];
+            
+            int randomCard = random.nextInt(13);
+            String card = cards[randomCard];
+            
             //card.setValue(insert call to random number generator here)
             // 
             //card.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
             //       Don't worry about duplicates at this point
             hand [i]=card;
+        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter the value of your card (1-13): ");
+        int value = scanner.nextInt();
+        System.out.print("Please enter the suit of your card (1-4): ");
+        int suit = scanner.nextInt();
+        String card = value + " of " + suit;
+        boolean found = false;
+        for(Card c: hand) {
+            if(c.equals(card)) {
+                found = true;
+                break;
+            }
+        }
+        if(found) {
+            System.out.println("Your card was found!");
+            printInfo();
+        } else {
+            System.out.println("Your card was not found!");
         }
 
         // insert code to ask the user for Card value and suit, create their card
@@ -48,19 +73,19 @@ public class CardTrick {
         System.out.println("Congratulations, you guessed right!");
         System.out.println();
         
-        System.out.println("My name is Paul, but you can call me prof, Paul or sir");
+        System.out.println("My name is Maansi Sharma, but you can call me Maansi ");
         System.out.println();
         
         System.out.println("My career ambitions:");
-        System.out.println("-- Be more active on LinkedIn");
+        System.out.println("-- Be more active in collge activities");
         System.out.println("-- Have a semester with no violations of academic integrity!");
 	System.out.println();	
 
         System.out.println("My hobbies:");
-        System.out.println("-- Investing");
+        System.out.println("-- Driving");
         System.out.println("-- Cooking");
-        System.out.println("-- Reading/Watching TV");
-        System.out.println("-- Riding my motorcycle");
+        System.out.println("-- Reading");
+        System.out.println("-- Travelling");
 
         System.out.println();
         
